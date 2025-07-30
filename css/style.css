@@ -1,0 +1,165 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #04042e;
+    color: white;
+    font-family: "Alice", serif;
+    padding: 20px;
+    margin: 0 auto;
+    font-size: 20px;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+header {
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.nav-item {
+    color: #ffff;
+    text-decoration: none;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.nav-item.active {
+    color: red;
+}
+
+.nav-item:hover {
+    transform: scale(1.1);
+}
+
+a:hover {
+    color: blue;
+    transform: scale(1.1);
+}
+
+a:focus {
+    color: green;
+}
+
+.read {
+    color: green;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.body {
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.geo {
+    width: 800px;
+    height: auto;
+}
+
+.page-title {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: red;
+    font-size: 3em;
+    font-weight: bolder;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.text {
+    color: #010116;
+    padding-right: 30px;
+    font-size: 1.3em;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    body {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-item {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    img {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .body {
+        padding: 20px;
+    }
+
+    .page-title {
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .text {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-item {
+        font-size: 14px;
+    }
+
+    .body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .page-title {
+        font-size: 1.5rem;
+    }
+}
